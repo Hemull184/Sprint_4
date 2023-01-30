@@ -17,8 +17,7 @@ public class MainPage {
     private static final By ORDER_BUTTON_LOWER = By.xpath("/html/body/div/div/div[1]/div[1]/div[2]/button[1]");
     //нижняя кнопка заказать
     public static final By DROP_DOWN_LIST_1 = By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[1]/div[1]/div");
-           // "//*[@class=\"accordion__button\" and @id=\"accordion__heading-0\"]");
-    //1й эелемент в выпадающем списке в разделе «Вопросы о важном»   /html/body/div/div/div/div[5]/div[2]/div/div[1]/div[1]/div
+      //1й эелемент в выпадающем списке в разделе «Вопросы о важном»
     public static final By LIST_AFTER_DROP_DOWN_1 = By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[1]/div[2]/p");
     //Элемент, появляющийся после клика на DROP_DOWN_LIST_0
 

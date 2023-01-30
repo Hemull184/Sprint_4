@@ -28,8 +28,10 @@ public class AboutRent {
     //Кнопка для финальног заказgit branch -M main
     private static final By CLICK_YES_CONFIRM_BUTTON = By.xpath("/html/body/div/div/div[2]/div[5]/div[2]/button[2]");
     //Кнопка да в подтверждении заказа
-    private static final By CONFORMATION_WINDOW = By.xpath("/html/body/div/div/div[2]/div[5]/div[1]");
+    private static final By CONFORMATION_WINDOW = By.xpath("/html/body/div/div/div[2]/div[5]/div[1][text()='Заказ оформлен']");
     //Окно подтверждения информации
+    private static final By CHECK_STATUS_BUTTON = By.xpath("/html/body/div/div/div[2]/div[5]/div[2]/button");
+    //КНОПКА ПОСМОТРЕТЬ СТАТУС
 
     private final WebDriver driver;
     public AboutRent(WebDriver driver) {
@@ -96,7 +98,7 @@ public class AboutRent {
     //нажали на кнопку да во всплывающем окне подтверждения заказа
     public String getTextConformationWindow() {
         WebDriverWait wait2 = new WebDriverWait(driver, 10);
-        wait2.until(ExpectedConditions.visibilityOfElementLocated(CONFORMATION_WINDOW));
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(CHECK_STATUS_BUTTON));
         return driver.findElement(CONFORMATION_WINDOW).getText();
     }
 }
