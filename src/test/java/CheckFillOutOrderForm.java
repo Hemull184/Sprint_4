@@ -17,7 +17,7 @@ public class CheckFillOutOrderForm {
         driver = new ChromeDriver();
     }
     @Test
-    public void checkOrderUpper() {
+    public void checkOrderUpperButton() {
         MainPage page = new MainPage(driver);
         page.open();
         page.clickCoockieButton();
@@ -45,7 +45,7 @@ public class CheckFillOutOrderForm {
         assertEquals(expected, actual);
     }
     @Test
-    public void checkOrderLover() {
+    public void checkOrderLoverButton() {
         MainPage page = new MainPage(driver);
         page.open();
         page.clickCoockieButton();

@@ -12,13 +12,13 @@ public class MainPage {
     private static final String PAGE_URL = "https://qa-scooter.praktikum-services.ru/";
     //URL тестируемой страницы сайта
     private static final By COOCKIE_BUTTON = By.id("rcc-confirm-button");
-    private static final By ORDER_BUTTON_UPPER = By.xpath("/html/body/div/div/div[1]/div[1]/div[2]/button[1]");
+    private static final By ORDER_BUTTON_UPPER = By.xpath(".//div[@class='Header_Nav__AGCXC']/button[@class='Button_Button__ra12g']");
     //верхняя кнопка заказать
-    private static final By ORDER_BUTTON_LOWER = By.xpath("/html/body/div/div/div[1]/div[1]/div[2]/button[1]");
+    private static final By ORDER_BUTTON_LOWER = By.xpath("//*[@class='Button_Button__ra12g Button_Middle__1CSJM']");
     //нижняя кнопка заказать
-    public static final By DROP_DOWN_LIST_1 = By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[1]/div[1]/div");
+    public static final By DROP_DOWN_LIST_1 = By.id("accordion__heading-0");
       //1й эелемент в выпадающем списке в разделе «Вопросы о важном»
-    public static final By LIST_AFTER_DROP_DOWN_1 = By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[1]/div[2]/p");
+    public static final By LIST_AFTER_DROP_DOWN_1 = By.xpath("//*[@id='accordion__panel-0']/p");
     //Элемент, появляющийся после клика на DROP_DOWN_LIST_0
 
 

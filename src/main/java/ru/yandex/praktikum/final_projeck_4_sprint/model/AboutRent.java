@@ -7,30 +7,30 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AboutRent {
 
-    private static final By CHOOSE_CALENDAR = By.xpath("/html/body/div/div/div[2]/div[2]/div[1]/div[1]/div/input");
+    private static final By CHOOSE_CALENDAR = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
     //Кнопка для выбора даты доставки самоката
-    private static final By CLICK_DAY = By.xpath("/html/body/div/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div[4]/div[3]");
+    private static final By CLICK_DAY = By.xpath(".//div[@aria-label='Choose понедельник, 30-е января 2023 г.']");
     //кнопка, выбирающая конкретный день
-    private static final By CLICK_DAY2 = By.xpath("/html/body/div/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div[5]/div[4]");
+    private static final By CLICK_DAY2 = By.xpath(".//div[@aria-label='Choose понедельник, 30-е января 2023 г.']");
     //кнопка, выбирающая конкретный день2
-    private static final By CLICK_CHOOSE_TIME = By.xpath("/html/body/div/div/div[2]/div[2]/div[2]/div/div[1]");
+    private static final By CLICK_CHOOSE_TIME = By.xpath(".//div[@class='Dropdown-placeholder'][text()='* Срок аренды']");
     //Кнопка для выбора срока аренды?
-    private static final By CLICK_TIME = By.xpath("/html/body/div/div/div[2]/div[2]/div[2]/div[2]/div[1]");
+    private static final By CLICK_TIME = By.xpath(".//div[@class='Dropdown-option'][text()='сутки']");
     //Кнопка для выбора суток
-    private static final By CLICK_TIME2 = By.xpath("/html/body/div/div/div[2]/div[2]/div[2]/div[2]/div[3]");
+    private static final By CLICK_TIME2 = By.xpath(".//div[@class='Dropdown-option'][text()='трое суток']");
     //Кнопка для выбора 3е суток
     private static final By BOX_BLACK = By.id("black");
     //Кнопка для выбора цвета самоката
     private static final By BOX_grey = By.id("grey");
-    private static final By TYPE_COMMENT = By.xpath("/html/body/div/div/div[2]/div[2]/div[4]/input");
+    private static final By TYPE_COMMENT = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     //поле для комментария курьеру
-    private static final By CLICK_FINAL_ORDER_BUTTON = By.xpath("/html/body/div/div/div[2]/div[3]/button[2]");
-    //Кнопка для финальног заказgit branch -M main
-    private static final By CLICK_YES_CONFIRM_BUTTON = By.xpath("/html/body/div/div/div[2]/div[5]/div[2]/button[2]");
+    private static final By CLICK_FINAL_ORDER_BUTTON = By.xpath("//*[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
+    //Кнопка для финальног заказа
+    private static final By CLICK_YES_CONFIRM_BUTTON = By.xpath("//*[@class='Order_Buttons__1xGrp']//button[text()='Да']");
     //Кнопка да в подтверждении заказа
-    private static final By CONFORMATION_WINDOW = By.xpath("/html/body/div/div/div[2]/div[5]/div[1][text()='Заказ оформлен']");
+    private static final By CONFORMATION_WINDOW = By.xpath("//*[@class='Order_ModalHeader__3FDaJ'][text()='Заказ оформлен']");
     //Окно подтверждения информации
-    private static final By CHECK_STATUS_BUTTON = By.xpath("/html/body/div/div/div[2]/div[5]/div[2]/button");
+    private static final By CHECK_STATUS_BUTTON = By.xpath("//*[@class='Order_NextButton__1_rCA']/Button[text()='Посмотреть статус']");
     //КНОПКА ПОСМОТРЕТЬ СТАТУС
 
     private final WebDriver driver;

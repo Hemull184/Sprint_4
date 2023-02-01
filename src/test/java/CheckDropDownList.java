@@ -15,7 +15,7 @@ public class CheckDropDownList {
         driver = new ChromeDriver();
     }
     @Test
-    public void checkElementForClick() {
+    public void checkElementForClick1() {
         MainPage page = new MainPage(driver);
         page.open();
         page.clickCoockieButton();

@@ -7,21 +7,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ForWhom {
 
-    public static final By TYPE_NAME = By.xpath("/html/body/div/div/div[2]/div[2]/div[1]/input");
+    public static final By TYPE_NAME = By.xpath(".//input[@placeholder='* Имя']");
     //Поле ввода имени
-    public static final By TYPE_FAMILY_NAME = By.xpath("/html/body/div/div/div[2]/div[2]/div[2]/input");
+    public static final By TYPE_FAMILY_NAME = By.xpath(".//input[@placeholder='* Фамилия']");
     //Поле ввода фамилии
-    public static final By TYPE_WHERE_TO_GO = By.xpath("/html/body/div/div/div[2]/div[2]/div[3]/input");
+    public static final By TYPE_WHERE_TO_GO = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
     //Поле ввода адреса
-    public static final By CHOOSE_METRO_STATION = By.xpath("/html/body/div/div/div[2]/div[2]/div[4]/div/div/input[@class='select-search__input']");
+    public static final By CHOOSE_METRO_STATION = By.xpath(".//input[@class='select-search__input']");
     //кнопка выбора станции метро
-    public static final By CHOOSE_METRO_STATION1 = By.xpath("/html/body/div/div/div[2]/div[2]/div[4]/div/div[2]/ul/li[3]/button/div[2]");
+    public static final By CHOOSE_METRO_STATION1 = By.xpath(".//li[@data-index='0']");
     //кнопка выбора станции метро 'Преображенская'
-    public static final By CHOOSE_METRO_STATION2 = By.xpath("/html/body/div/div/div[2]/div[2]/div[4]/div/div[2]/ul/li[2]/button/div[2]");
+    public static final By CHOOSE_METRO_STATION2 = By.xpath(".//li[@data-index='1']");
     //кнопка выбора станции метро 'Черкизовская'
-    public static final By TYPE_TELEPHONE_NUMBER = By.xpath("/html/body/div/div/div[2]/div[2]/div[5]/input");
+    public static final By TYPE_TELEPHONE_NUMBER = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     //Поле ввода номера телефона
-    private static final By FURTHER_BUTTON = By.xpath("/html/body/div/div/div[2]/div[3]/button");
+    private static final By FURTHER_BUTTON = By.xpath("//*[@class='Order_NextButton__1_rCA']/button[text()='Далее']");
     //Кнопка далее на странице ввода личной информации
 
     private final WebDriver driver;
