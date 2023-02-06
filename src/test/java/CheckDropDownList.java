@@ -4,9 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.yandex.praktikum.final_projeck_4_sprint.model.MainPage;
-
 import static org.junit.Assert.assertEquals;
-
 
 public class CheckDropDownList {
     private WebDriver driver;
@@ -16,16 +14,14 @@ public class CheckDropDownList {
     }
     @Test
     public void checkElementForClick() {
-        MainPage page = new MainPage(driver);
-        page.open();
-        page.clickCoockieButton();
-        page.clickDropDownList1();
-        page.getTextFirstElementDrop();
+        MainPage mainPage = new MainPage(driver);
+        mainPage.preparations();
+        mainPage.clickDropDownList1();
+        mainPage.getTextFirstElementDrop();
         String expected = "Сутки — 400 рублей. Оплата курьеру — наличными или картой";
-        String actual = page.getTextFirstElementDrop();
+        String actual = mainPage.getTextFirstElementDrop();
         assertEquals(expected, actual, "Сутки — 400 рублей. Оплата курьеру — наличными или картой.");
     }
-
     @After
     public void cleanUp() {
         driver.manage().deleteAllCookies();
